@@ -1,0 +1,20 @@
+.homeWrapper {
+    padding: 50px;
+}
+
+.aboutWrapper {
+    width: 1200px;
+    max-width: 70vw;
+    font-size: x-large;
+    color: aqua;
+    margin: 0 auto;
+}
+
+.break {
+    height: 40px;
+}
+
+.hostsWrapper {
+    display: flex;
+    justify-content: space-evenly;
+}

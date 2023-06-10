@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import { Attendees } from './pages/attendees';
 import { Gallery } from './pages/gallery';
@@ -23,6 +24,7 @@ function App() {
             <Route path="/support" element={<Support />} />
           </Routes>
         </div>
+        <Footer />
       </Router>
     </>
   );

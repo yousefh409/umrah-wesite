@@ -1,96 +1,84 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "../styles/NavBar.css";
-import logo from "../images/masjid-logo.avif"
+import React, { useEffect, useState } from "react";
+import { BiMenuAltRight } from "react-icons/bi";
+import { AiOutlineClose } from "react-icons/ai";
+import { Link, useNavigate } from "react-router-dom";
+import "../styles/NavBar.scss";
+import logo from '../images/logo.png';
 
-function NavBar() {
-  const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click);
+// Credit to: https://reactjsexample.com/react-navbar-responsive-sass-with-hamburger-menu-route-ready/
+function Navbar() {
+  const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [size, setSize] = useState({
+    width: 0,
+    height: 0,
+  });
+  useEffect(() => {
+    const handleResize = () => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener("resize", handleResize);
 
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (size.width > 768 && menuOpen) {
+      setMenuOpen(false);
+    }
+  }, [size.width, menuOpen]);
+
+  const menuToggleHandler = () => {
+    setMenuOpen((p) => !p);
+  };
 
   return (
-    <div className="navbarWrapper">
-      <div className="navbarLogoContainer">
-        {/* <img className="navbarLogo" src={logo}></img> */}
-        <nav className="navbar">
-          <div className="nav-container">
-            <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/itinerary"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
-                    Itinerary
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/support"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
-                  Support
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/attendees"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
-                  Attendees
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/sponsors"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
-                  Sponsors
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  exact
-                  to="/gallery"
-                  activeClassName="active"
-                  className="nav-links"
-                  onClick={handleClick}
-                >
-                  Gallery
-                </NavLink>
-              </li>
-            </ul>
-            <div className="nav-icon" onClick={handleClick}>
-              <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
-            </div>
-          </div>
+    <header className="header">
+      <div className="header__content">
+        <Link to="/" className="header__content__logo">
+            <img style={{width: "75px"}} src={logo} alt="Berkeley Stanford Umrah Logo" />
+        </Link>
+        <nav
+          className={`${"header__content__nav"} 
+          ${menuOpen && size.width < 768 ? `${"isMenu"}` : ""} 
+          }`}
+        >
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/itinerary">Itinerary</Link>
+            </li>
+            <li>
+              <Link to="/support">Support</Link>
+            </li>
+            <li>
+              <Link to="/sponsors">Sponsors</Link>
+            </li>
+            <li>
+              <Link to="/attendees">Attendees</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Gallery</Link>
+            </li>
+
+          </ul>
         </nav>
+        <div className="header__content__toggle">
+          {!menuOpen ? (
+            <BiMenuAltRight onClick={menuToggleHandler} />
+          ) : (
+            <AiOutlineClose onClick={menuToggleHandler} />
+          )}
+        </div>
       </div>
-    </div>
+    </header>
   );
 }
 
-export default NavBar;
+export default Navbar;

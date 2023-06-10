@@ -14,59 +14,61 @@ function Banner() {
   window.fn = owl_carousel;
 
   return (
-    <OwlCarousel className='sliding-banner owl-carousel' items={1} margin={10} nav>
-    
-      <div class='item'>
-        <div className='col left'>
-          <h2 className='section-title large'>
-            Test test test
-          </h2>
-          <a
-            className='primary-btn'
-            data-fancybox
-            href='https://youtu.be/iiOBq5t6KVc'
-          >
-            See what tomorrow holds
-          </a>
+    <div style={{backgroundColor: "rgb(250, 240, 218)", borderRadius: "20px"}}>
+        <OwlCarousel className='sliding-banner owl-carousel owl-theme' items={1} margin={10} nav autoplay={true} loop>
+        
+        <div class='item'>
+            <div className='col left'>
+            <h2 className='section-title large'>
+                A first of its kind Umrah trip bringing together the Berkeley and Stanford muslim communities.
+            </h2>
+            <a
+                className='primary-btn'
+                data-fancybox
+                href='https://youtu.be/iiOBq5t6KVc'
+            >
+                Register Today
+            </a>
+            </div>
+            <div
+            className='col right'
+            style={{
+                backgroundImage: `url(${banner1})`,
+            }}
+            ></div>
         </div>
-        <div
-          className='col right'
-          style={{
-            backgroundImage: `url(${banner1})`,
-          }}
-        ></div>
-      </div>
-      <div class='item'>
-        <div className='col left'>
-          <h2 className='section-title large'>
-            STest test test
-          </h2>
-          <a href='#' className='primary-btn'>
-            Learn More
-          </a>
+        <div class='item'>
+            <div className='col left'>
+            <h2 className='section-title large'>
+                Sponsored and supported by alumni, parents, and other members of these communities
+            </h2>
+            <a href='#' className='primary-btn'>
+                Donate Today
+            </a>
+            </div>
+            <div
+            className='col right'
+            style={{ backgroundImage: `url(${banner2})` }}
+            ></div>
         </div>
-        <div
-          className='col right'
-          style={{ backgroundImage: `url(${banner2})` }}
-        ></div>
-      </div>
-      <div class='item'>
-        <div className='col left'>
-          <h2 className='section-title large'>
-          Test test test
-          </h2>
-          <a href='#' className='primary-btn'>
-            Discover Solutions
-          </a>
+        <div class='item'>
+            <div className='col left'>
+            <h2 className='section-title large'>
+            Taking students on a once-in-a-lifetime trip
+            </h2>
+            <a href='#' className='primary-btn'>
+                Support Today
+            </a>
+            </div>
+            <div
+            className='col right'
+            style={{
+                backgroundImage: `url(${banner3})`,
+            }}
+            ></div>
         </div>
-        <div
-          className='col right'
-          style={{
-            backgroundImage: `url(${banner3})`,
-          }}
-        ></div>
-      </div>
-    </OwlCarousel >
+        </OwlCarousel >
+    </div>
   );
 }
 
