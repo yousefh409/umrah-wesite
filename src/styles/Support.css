@@ -1,0 +1,45 @@
+.supportWrapper {
+    padding: 50px;
+}
+
+.barcontainer {
+    background-color: rgb(250, 240, 218);
+    position: relative;
+    margin-left: 50px;
+    width: 50px;
+    height: 320px;
+    float: left;
+    /** border darken(#98AFC7, 40%) 3px solid **/
+    border-radius: 10px;
+}
+
+.bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    /** border-top: 6px solid #FFF; **/
+    box-sizing: border-box;
+    animation: grow 1.5s ease-out forwards;
+    transform-origin: bottom;
+}
+
+.berkeley {
+    background-color: #003262;
+}
+
+.stanford {
+    background-color: #8C1515;
+}
+
+
+.progressWrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@keyframes grow {
+    from {
+        transform: scaleY(0);
+    }
+}

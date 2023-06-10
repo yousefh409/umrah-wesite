@@ -1,7 +1,7 @@
 import React from 'react';
-import banner1 from '../images/banner1.jpg';
-import banner2 from '../images/banner2.jpg';
-import banner3 from '../images/banner3.jpg';
+import banner1 from '../images/banner1.jpeg';
+import banner2 from '../images/banner2.jpeg';
+import banner3 from '../images/banner3.jpeg';
 import '../styles/Banner.css';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -23,7 +23,7 @@ function Banner() {
                 A first of its kind Umrah trip bringing together the Berkeley and Stanford muslim communities.
             </h2>
             <a
-                className='primary-btn'
+                className='btn btn-primary'
                 data-fancybox
                 href='https://youtu.be/iiOBq5t6KVc'
             >
@@ -42,7 +42,7 @@ function Banner() {
             <h2 className='section-title large'>
                 Sponsored and supported by alumni, parents, and other members of these communities
             </h2>
-            <a href='#' className='primary-btn'>
+            <a href='#' className='btn btn-primary'>
                 Donate Today
             </a>
             </div>
@@ -56,7 +56,7 @@ function Banner() {
             <h2 className='section-title large'>
             Taking students on a once-in-a-lifetime trip
             </h2>
-            <a href='#' className='primary-btn'>
+            <a href='#' className='btn btn-primary'>
                 Support Today
             </a>
             </div>

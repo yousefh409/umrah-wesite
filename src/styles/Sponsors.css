@@ -1,0 +1,38 @@
+.sponsorsWrapper {
+    padding: 50px;
+}
+
+.sponsorsFlex {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.sponsorLogo {    
+    animation: bounce 1s infinite; 
+    width: 250px;
+    height: 250px;
+    /* text-align: center; */
+    position: relative;
+    margin: 10px;
+
+}      
+
+.sponsorLogoImage {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes bounce {
+    0% { }
+    50% { transform: translateY(-3px); }
+    100% { }
+}
