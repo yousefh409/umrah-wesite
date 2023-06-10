@@ -1,0 +1,10 @@
+.registerWrapper {
+    padding: 50px;
+}
+
+.registerButton {
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
