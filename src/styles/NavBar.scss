@@ -1,155 +1,168 @@
-
-
 @mixin breakpoint($point) {
-    @if $point == md {
+    @if $point ==md {
+
         // 768px
         @media (min-width: 48em) {
             @content;
         }
     }
 }
-        
-        .header {
-            box-shadow: 0 2px 2px -2px gray;
-            background: rgb(250, 240, 218);
+
+.importantNavButton {
+    background-color: rgb(255, 225, 161);
+}
+
+.header {
+    box-shadow: 0 2px 2px -2px gray;
+    background: rgb(250, 240, 218);
+    width: 100%;
+    height: 100px;
+    padding: 0 1.5rem;
+
+    @include breakpoint(md) {
+        padding: 0 3rem;
+    }
+
+    transition: 0.3s ease all;
+
+    &__content {
+        overflow: hidden;
+        color: black;
+        margin: 0 auto;
+        max-width: 1920px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 100;
+
+        &__logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+
+        &__nav {
+            top: 0;
+            right: 100%;
+            bottom: 0;
             width: 100%;
-            height: 100px;
-            padding: 0 1.5rem;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            // background: green;
+            backdrop-filter: blur(2px);
+            transform: translate(0);
+            transition: 0.3s ease transform;
+
+
             @include breakpoint(md) {
-                padding: 0 3rem;
-            }
-            transition: 0.3s ease all;
-        
-            &__content {
-                overflow: hidden;
-                color: black;
-                margin: 0 auto;
-                max-width: 1920px;
+                transform: none;
+                flex-direction: row;
+                background: transparent;
+                width: auto;
                 height: 100%;
+                position: static;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
-                position: relative;
-                z-index: 100;
-        
-                &__logo {
-                    font-size: 2rem;
-                    font-weight: bold;
-                    text-decoration: none;
-                    color: black;
-                }
-        
-                &__nav {
-                    top: 0;
-                    right: 100%;
-                    bottom: 0;
-                    width: 100%;
-                    height: 100vh;
-                    position: fixed;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
+                flex-direction: column;
+                margin-bottom: 32px;
+
+                @include breakpoint(md) {
+                    flex-direction: row;
                     align-items: center;
-                    text-align: center;
-                    // background: green;
-                    backdrop-filter: blur(2px);
-                    transform: translate(0);
-                    transition: 0.3s ease transform;
-                   
-        
-                    @include breakpoint(md) {
-                        transform: none;
-                        flex-direction: row;
-                        background: transparent;
-                        width: auto;
-                        height: 100%;
-                        position: static;
-                    }
-                    ul {
-                        list-style: none;
-                        padding: 0;
-                        display: flex;
-                        flex-direction: column;
+                    margin-bottom: 0;
+                    margin-right: calc(0.5rem + #{16px});
+                }
+
+                li {
+                    &:not(:last-child) {
                         margin-bottom: 32px;
+
                         @include breakpoint(md) {
-                            flex-direction: row;
-                            align-items: center;
                             margin-bottom: 0;
-                            margin-right: calc(0.5rem + #{16px});
-                        }
-                        li {
-                            &:not(:last-child) {
-                                margin-bottom:32px;
-                                @include breakpoint(md) {
-                                    margin-bottom: 0;
-                                    margin-right: 16px;
-                                }
-                            }
-                            a {
-                                text-decoration: none;
-                                color: inherit;
-                                padding: 0.75rem 1.25rem;
-                                border-radius: 12px;
-                                transition: 0.3s ease all;
-                                font-size: large;
-        
-                                &:hover {
-                                    background: rgba(#003262, 0.1);
-                                }
-                                &:active {
-                                    border-radius: calc(#{12px} + 6px);
-                                    background: linear-gradient(rgba(#003262, 0.1), rgba(white, 0.2));
-                                }
-                            }
+                            margin-right: 16px;
                         }
                     }
-                    .btn {
-                        cursor: pointer;
-                        outline: none;
+
+                    a {
+                        text-decoration: none;
+                        color: inherit;
                         padding: 0.75rem 1.25rem;
                         border-radius: 12px;
-                        font-size: 1rem;
-                        font-family: inherit;
-                        background: #8C1515;
-                        color: rgb(32, 32, 32);
-                        border: 1px solid transparent;
                         transition: 0.3s ease all;
-                        margin:0.50em 0.50em;
-                       
-        
+                        font-size: large;
+
                         &:hover {
-                            border-color: #8C1515;
-                            background: rgba(#8C1515, 0.1);
-                            color: #8C1515;
+                            background: rgba(#003262, 0.1);
                         }
+
                         &:active {
-                            border-color: #8C1515;
-                            background: linear-gradient(rgba(#8C1515, 0.2), rgba(rgb(162, 162, 246), 0.3));
-                            color: #8C1515;
+                            border-radius: calc(#{12px} + 6px);
+                            background: linear-gradient(rgba(#003262, 0.1), rgba(white, 0.2));
                         }
-                        
-                    }
-                    &.isMenu {
-                        transform: translate(100%);
-                    }
-                }
-        
-                &__toggle {
-                    cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                    font-size: 2rem;
-                    transition: 0.3s ease all;
-                    position: relative;
-        
-                    &:hover {
-                        color: #003262;
-                    }
-        
-                    @include breakpoint(md) {
-                        display: none;
                     }
                 }
             }
+
+            .btn {
+                cursor: pointer;
+                outline: none;
+                padding: 0.75rem 1.25rem;
+                border-radius: 12px;
+                font-size: 1rem;
+                font-family: inherit;
+                background: #8C1515;
+                color: rgb(32, 32, 32);
+                border: 1px solid transparent;
+                transition: 0.3s ease all;
+                margin: 0.50em 0.50em;
+
+
+                &:hover {
+                    border-color: #8C1515;
+                    background: rgba(#8C1515, 0.1);
+                    color: #8C1515;
+                }
+
+                &:active {
+                    border-color: #8C1515;
+                    background: linear-gradient(rgba(#8C1515, 0.2), rgba(rgb(162, 162, 246), 0.3));
+                    color: #8C1515;
+                }
+
+            }
+
+            &.isMenu {
+                transform: translate(100%);
+            }
         }
-        
+
+        &__toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            transition: 0.3s ease all;
+            position: relative;
+
+            &:hover {
+                color: #003262;
+            }
+
+            @include breakpoint(md) {
+                display: none;
+            }
+        }
+    }
+}

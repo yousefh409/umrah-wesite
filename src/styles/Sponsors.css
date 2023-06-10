@@ -5,8 +5,9 @@
 .sponsorsFlex {
     display: flex;
     justify-content: space-evenly;
-    align-content: center;
 }
+
+
 
 .sponsorLogo {    
     animation: bounce 1s infinite; 

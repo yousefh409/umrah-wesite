@@ -2,15 +2,20 @@
     padding: 50px;
 }
 
+.individualProgressBar {
+    text-align: center;
+}
+
 .barcontainer {
     background-color: rgb(250, 240, 218);
     position: relative;
-    margin-left: 50px;
-    width: 50px;
+    /* margin-left: 50px; */
+    width: 75px;
     height: 320px;
-    float: left;
+    /* float: left; */
     /** border darken(#98AFC7, 40%) 3px solid **/
     border-radius: 10px;
+    margin: auto;
 }
 
 .bar {
@@ -23,6 +28,20 @@
     animation: grow 1.5s ease-out forwards;
     transform-origin: bottom;
 }
+
+.circle {
+    position: relative;
+    /* bottom: 0; */
+    bottom: 50px;
+    width: 150px;
+      height: 150px;
+      -webkit-border-radius: 75px;
+      -moz-border-radius: 75px;
+      border-radius: 75px;
+      background: yellow;
+      margin: auto;
+
+    }
 
 .berkeley {
     background-color: #003262;
@@ -42,4 +61,11 @@
     from {
         transform: scaleY(0);
     }
+}
+
+.donateButton {
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
 }

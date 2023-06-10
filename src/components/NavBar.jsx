@@ -52,20 +52,23 @@ function Navbar() {
               <Link to="/">Home</Link>
             </li>
             <li>
+              <Link className="importantNavButton" to="/support">Support</Link>
+            </li>
+            <li>
+              <Link className="importantNavButton" to="/register">Register</Link>
+            </li>
+            <li>
               <Link to="/itinerary">Itinerary</Link>
             </li>
-            <li>
-              <Link to="/support">Support</Link>
-            </li>
-            <li>
+            <li >
               <Link to="/sponsors">Sponsors</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/attendees">Attendees</Link>
             </li>
             <li>
               <Link to="/gallery">Gallery</Link>
-            </li>
+            </li> */}
 
           </ul>
         </nav>
