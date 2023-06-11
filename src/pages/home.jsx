@@ -48,14 +48,14 @@ export const Home = () => {
             <div>
                 <h1>The Hosts</h1>
                 <div className="hostsWrapper">
-                    <div className="card" style={{width: "23rem"}}>
+                    <div className="card" style={{width: "23rem", margin: "7px"}}>
                         <img className="card-img-top" src={elbakri} alt="Card image cap" />
                         <div className="card-body">
                             <h5 className="card-title">Shaykh Alauddin El-Bakri</h5>
                             <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
-                    <div className="card" style={{width: "23rem"}}>
+                    <div className="card" style={{width: "23rem", margin: "7px"}}>
                         <img className="card-img-top" src={darElSalam} alt="Card image cap" />
                         <div className="card-body">
                             <h5 className="card-title">Dar El Salam</h5>
