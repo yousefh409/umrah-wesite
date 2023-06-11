@@ -16,8 +16,8 @@ export const Home = () => {
             <div>
                 <h1>About</h1>
                 <div className="aboutWrapper">
-                    <div  class="card">
-                        <div class="card-body">
+                    <div  className="card">
+                        <div className="card-body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                         <a style={{margin: "10px"}} href='/register' className='btn btn-primary'>
@@ -34,8 +34,8 @@ export const Home = () => {
             <div>
                 <h1>Donations</h1>
                 <div className="aboutWrapper">
-                    <div  class="card">
-                        <div class="card-body">
+                    <div  className="card">
+                        <div className="card-body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                         <a style={{margin: "10px"}} href='/support' className='btn btn-primary'>
@@ -48,18 +48,18 @@ export const Home = () => {
             <div>
                 <h1>The Hosts</h1>
                 <div className="hostsWrapper">
-                    <div class="card" style={{width: "23rem"}}>
-                        <img class="card-img-top" src={elbakri} alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">Shaykh Alauddin El-Bakri</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div className="card" style={{width: "23rem"}}>
+                        <img className="card-img-top" src={elbakri} alt="Card image cap" />
+                        <div className="card-body">
+                            <h5 className="card-title">Shaykh Alauddin El-Bakri</h5>
+                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
-                    <div class="card" style={{width: "23rem"}}>
-                        <img class="card-img-top" src={darElSalam} alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="card-title">Dar El Salam</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div className="card" style={{width: "23rem"}}>
+                        <img className="card-img-top" src={darElSalam} alt="Card image cap" />
+                        <div className="card-body">
+                            <h5 className="card-title">Dar El Salam</h5>
+                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
                 </div>

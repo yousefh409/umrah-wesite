@@ -31,22 +31,22 @@ export const Support = () => {
                     <div className="individualProgressBar">
                         <h5>UC Berkeley</h5>
                         <p>${berkeleyAmount.toLocaleString()} out of ${goalAmount.toLocaleString()}</p>
-                        <div class="barcontainer">
+                        <div className="barcontainer">
                             <p>{berkeleyPercent.toFixed(1)}%</p>
-                            <div class="bar berkeley" style={{height: berkeleyPercent.toFixed(1) + "%"}} />
+                            <div className="bar berkeley" style={{height: berkeleyPercent.toFixed(1) + "%"}} />
                         </div>
-                        <div class="circle berkeley">
+                        <div className="circle berkeley">
                             <img style={{width: "130px"}} src={berkeleyLogo} alt="BERKELEY" />
                         </div>
                     </div>
                     <div className="individualProgressBar">
                     <h5>Stanford</h5>
                         <p>${stanfordAmount.toLocaleString()} out of ${goalAmount.toLocaleString()}</p>
-                        <div class="barcontainer">
+                        <div className="barcontainer">
                             <p>{stanfordPercent.toFixed(1)}%</p>
-                            <div class="bar stanford" style={{height: stanfordPercent.toFixed(1) + "%"}} />
+                            <div className="bar stanford" style={{height: stanfordPercent.toFixed(1) + "%"}} />
                         </div>
-                        <div class="circle stanford">
+                        <div className="circle stanford">
                             <img style={{width: "150px"}} src={stanfordLogo} alt="STANFORD" />
                         </div>
                     </div>

@@ -17,7 +17,7 @@ function Banner() {
     <div style={{backgroundColor: "rgb(250, 240, 218)", borderRadius: "20px"}}>
         <OwlCarousel className='sliding-banner owl-carousel owl-theme' items={1} margin={10} nav autoplay={true} loop>
         
-        <div class='item'>
+        <div className='item'>
             <div className='col left'>
             <h2 className='section-title large'>
                 A first of its kind Umrah trip bringing together the Berkeley and Stanford muslim communities.
@@ -37,7 +37,7 @@ function Banner() {
             }}
             ></div>
         </div>
-        <div class='item'>
+        <div className='item'>
             <div className='col left'>
             <h2 className='section-title large'>
                 Sponsored and supported by alumni, parents, and other members of these communities
@@ -51,7 +51,7 @@ function Banner() {
             style={{ backgroundImage: `url(${banner2})` }}
             ></div>
         </div>
-        <div class='item'>
+        <div className='item'>
             <div className='col left'>
             <h2 className='section-title large'>
             Taking students on a once-in-a-lifetime trip
