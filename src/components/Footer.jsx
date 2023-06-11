@@ -7,34 +7,42 @@ import {
     FooterLink,
     Heading,
 } from "./FooterStyles.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faEarth } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
 return (
+	
 	<Box>
+		
 	<Container>
 		<Row>
 		<Column>
 			<Heading>Info</Heading>
 			<FooterLink href="/">Home</FooterLink>
-			<FooterLink href="/itinerary">Next Steps</FooterLink>
 			<FooterLink href="/support">Support Us</FooterLink>
+			<FooterLink href="/register">Register</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Tawasaw</Heading>
-			<FooterLink href="https://mcceastbay.org/">Website</FooterLink>
-            <FooterLink href="#">
-			<i className="fab fa-facebook-f">
+			<FooterLink href="https://tawasaw.org/">
+				<FontAwesomeIcon icon={faEarth} title="Website" />		
 				<span style={{ marginLeft: "10px" }}>
-				Facebook
+					Website
 				</span>
-			</i>
 			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-instagram">
+            <FooterLink href="https://www.facebook.com/Tawasaw/">
+				<FontAwesomeIcon icon={faFacebook} title="Facebook" />		
 				<span style={{ marginLeft: "10px" }}>
-				Instagram
+					Facebook
 				</span>
-			</i>
+			</FooterLink>
+			<FooterLink href="https://www.instagram.com/tawasawyouth/">
+				<FontAwesomeIcon icon={faInstagram} title="Instagram" />		
+				<span style={{ marginLeft: "10px" }}>
+					Instagram
+				</span>
 			</FooterLink>
 		</Column>
 		<Column>
@@ -45,32 +53,22 @@ return (
 		<Column>
 			<Heading>Social Media</Heading>
 			<FooterLink href="#">
-			<i className="fab fa-facebook-f">
+				<FontAwesomeIcon icon={faFacebook} title="Facebook" />		
 				<span style={{ marginLeft: "10px" }}>
-				Facebook
+					Facebook
 				</span>
-			</i>
 			</FooterLink>
 			<FooterLink href="#">
-			<i className="fab fa-instagram">
+				<FontAwesomeIcon icon={faInstagram} title="Instagram" />		
 				<span style={{ marginLeft: "10px" }}>
-				Instagram
+					Instagram
 				</span>
-			</i>
 			</FooterLink>
 			<FooterLink href="#">
-			<i className="fab fa-twitter">
+				<FontAwesomeIcon icon={faYoutube} title="Youtube" />		
 				<span style={{ marginLeft: "10px" }}>
-				Twitter
+					Youtube 
 				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-youtube">
-				<span style={{ marginLeft: "10px" }}>
-				Youtube
-				</span>
-			</i>
 			</FooterLink>
 		</Column>
 		</Row>

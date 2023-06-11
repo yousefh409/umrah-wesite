@@ -25,7 +25,7 @@ function Banner() {
             <a
                 className='btn btn-primary'
                 data-fancybox
-                href='https://youtu.be/iiOBq5t6KVc'
+                href='/register'
             >
                 Register Today
             </a>
@@ -42,7 +42,7 @@ function Banner() {
             <h2 className='section-title large'>
                 Sponsored and supported by alumni, parents, and other members of these communities
             </h2>
-            <a href='#' className='btn btn-primary'>
+            <a href='/support' className='btn btn-primary'>
                 Donate Today
             </a>
             </div>
@@ -56,7 +56,7 @@ function Banner() {
             <h2 className='section-title large'>
             Taking students on a once-in-a-lifetime trip
             </h2>
-            <a href='#' className='btn btn-primary'>
+            <a href='/support' className='btn btn-primary'>
                 Support Today
             </a>
             </div>
