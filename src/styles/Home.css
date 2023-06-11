@@ -18,3 +18,15 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+
+.homeImage {
+    max-width: 40vw;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.homeImageWrapper {
+    display: flex;
+    justify-content: center;
+}

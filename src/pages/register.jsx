@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Register.css"
-import berkeleyLogo from '../images/berkeleyLogo.png';
-import stanfordLogo from '../images/stanfordLogo.webp'
+import kaabah from "../images/kaabah.webp"
 
 export const Register = () => {
     var stanfordAmount = 45000;

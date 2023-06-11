@@ -6,3 +6,15 @@
     font-size: x-large;
     margin-top: 10px;
 }
+
+.itineraryInfo {
+    display: flex;
+    font-size: larger;
+    align-items: center;
+}
+
+.itineraryImage {
+    max-width: 30vw;
+    margin: 30px;
+    border-radius: 15px;
+}

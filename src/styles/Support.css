@@ -68,7 +68,7 @@
     text-align: center;
     font-size: x-large;
     font-weight: bold;
-    background-color: rgb(255, 225, 161);
+    /* background-color: rgb(255, 225, 161); */
     border: none;
-    color: black;
+    /* color: black; */
 }
