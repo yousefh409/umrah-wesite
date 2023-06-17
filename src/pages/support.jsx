@@ -14,19 +14,9 @@ export const Support = () => {
     console.log(berkeleyAmount)
     return (
         <div className="supportWrapper">
-            <h1>Donate Today!</h1>
-            <p>Donations will be processed through Tawasaw, a 501(c)(3) non-profit orginization! <strong>When making the donation, please put a note that it is intended for the "Berkeley Stanford Umrah"</strong>. If you would like, also note which school you would like to support.</p>
-            <a
-                className='btn btn-primary donateButton'
-                data-fancybox
-                href='https://www.tawasaw.org/donate'
-            >
-                Donate Now
-            </a>
-            <div className="break" />
             <div>
                 <h1>Current Progress</h1>
-                <h5>Here is how close we are to meeting our goals:</h5>
+                <h6>Here is how close we are to meeting our goals:</h6>
                 <div className="progressWrapper">
                     <div className="individualProgressBar">
                         <h5>UC Berkeley</h5>
@@ -52,9 +42,19 @@ export const Support = () => {
                     </div>
                 </div>
             </div>
+            {/* <div className="break" /> */}
+            <h1 id="donate">Donate Today!</h1>
+            <p>Donations will be processed through Tawasaw, a 501(c)(3) non-profit orginization! <strong>When making the donation, please put a note that it is intended for the "Berkeley Stanford Umrah"</strong>. If you would like, also note which school you would like to support.</p>
+            <a
+                className='btn btn-primary donateButton'
+                data-fancybox
+                href='https://www.tawasaw.org/donate'
+            >
+                Donate Now
+            </a>
             <div className="break" />
             <h1>How it works</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Your donations will go directly to supporting students on this trip. Our goal is to raise 100% of the neccassary funds, and make this trip free for the students attending. When donating you will also have the option of picking which school's students you would like your donations go towards (otherwise, it will be split evenly). Donations will be proccessed through Tawasaw, a 501(c)(3) non-profit orginization, which means you can deduct whatever you donate from your taxes! Please contact us if you have any questions at all.</p>
 
             <div>
                 <h1></h1>

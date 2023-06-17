@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Banner from "../components/Banner";
-import "../styles/Home.css"
+import "../styles/Home.scss"
 import elbakri from '../images/shaykh-el-bakri.png';
 import darElSalam from '../images/dar-el-salam.jpg';
 import kaabah from '../images/kaabah.webp';
 import masjidElNabawy from '../images/masjidAlNabawi.jpg';
 
 export const Home = () => {
-
+    
     return (
         <div className="homeWrapper">
             <Banner />
@@ -18,7 +18,9 @@ export const Home = () => {
                 <div className="aboutWrapper">
                     <div  className="card">
                         <div className="card-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            This is a once in a lifetime trip, that will bring together the Berkeley and Stanford muslim student populations. Together, we will embark on an 11-night trip to the blessed cities of Mecca and Madinah. 
+                            There, we will not only complete the holy rites of Umrah, but also visit and learn about many of the historic sites that we read about in our Islamic books.
+                            We hope to be able to raise funds to make this trip as affordable as possible, so please consider <a href="/support">donating today</a> and spreading the word!
                         </div>
                         <a style={{margin: "10px"}} href='/register' className='btn btn-primary'>
                             Register Today
@@ -27,16 +29,19 @@ export const Home = () => {
                 </div>
             </div>      
             {/* <div className="break" /> */}
-            <div className="homeImageWrapper">
-                <img className="homeImage" src={kaabah} alt="Picture of hotel room" />
-                <img className="homeImage" src={masjidElNabawy} alt="Picture of hotel room" />
-            </div>
+            
+            {window.innerWidth > 768? <div className="homeImageWrapper">
+                <img className="homeImage islamicBorder" src={kaabah} alt="Picture of hotel room" />
+                <img className="homeImage islamicBorder" src={masjidElNabawy} alt="Picture of hotel room" />
+            </div>: <div />}
             <div>
                 <h1>Donations</h1>
                 <div className="aboutWrapper">
                     <div  className="card">
                         <div className="card-body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            We want to make this trip as affordable as possible (or even free if we raise enough funds) for the students attending.
+                            To do this, we need your help (and wallet). Your donations will go to taking students on an amazing trip to visit some of Islams most famous sites, inspiring them for the rest of their lives!
+                            Any amount is appreciated, and even just sharing this with your network would bring us closer to our goals.
                         </div>
                         <a style={{margin: "10px"}} href='/support' className='btn btn-primary'>
                             Donate Today
@@ -52,14 +57,14 @@ export const Home = () => {
                         <img className="card-img-top" src={elbakri} alt="Card image cap" />
                         <div className="card-body">
                             <h5 className="card-title">Shaykh Alauddin El-Bakri</h5>
-                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p className="card-text">Shaykh Alauddin El-Bakri is a founding member of several non-profit organizations that serve the Muslim community such as (IMAN) Inner-City Muslim Action Network, My Dean, Support Life Foundation and Tawasaw.org. Shaykh El-Bakri is currently the resident scholar and Khateeb at West Valley Muslim association. Shaykh El-Bakri will be leading and guiding us throughout the trip.</p>
                         </div>
                     </div>
                     <div className="card" style={{width: "23rem", margin: "7px"}}>
                         <img className="card-img-top" src={darElSalam} alt="Card image cap" />
                         <div className="card-body">
                             <h5 className="card-title">Dar El Salam</h5>
-                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p className="card-text">Dar El Salam has been providing high-quality service for over 30 years, making them the top Umrah facilitator in North America. They have organized trips to the holy lands of Mecca and Madinah for over 100,000 people and counting! Dar El Salam will be organizing and managing the umrah trip.</p>
                         </div>
                     </div>
                 </div>

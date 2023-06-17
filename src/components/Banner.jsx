@@ -40,7 +40,7 @@ function Banner() {
         <div className='item'>
             <div className='col left'>
             <h2 className='section-title large'>
-                Sponsored and supported by alumni, parents, and other members of these communities
+                Sponsored and supported by you!
             </h2>
             <a href='/support' className='btn btn-primary'>
                 Donate Today

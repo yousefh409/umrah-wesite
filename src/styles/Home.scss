@@ -17,16 +17,19 @@
 .hostsWrapper {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 
 .homeImage {
-    max-width: 40vw;
+    width: 30vw;
     margin: 30px;
     border-radius: 15px;
+    /* border: solid 4px rgb(250, 240, 218); */
 }
 
 .homeImageWrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
