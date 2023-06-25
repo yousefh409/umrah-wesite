@@ -1,4 +1,4 @@
-.itineraryWrapper {
+.tripsWrapper {
     padding: 50px;
 }
 
@@ -7,14 +7,18 @@
     margin-top: 10px;
 }
 
-.itineraryInfo {
+.tripsInfo {
     display: flex;
     font-size: larger;
     align-items: center;
 }
 
-.itineraryImage {
+.tripsImage {
     max-width: 30vw;
     margin: 30px;
     border-radius: 15px;
+}
+
+.tripContentWrapper {
+    padding-left: 20px;
 }

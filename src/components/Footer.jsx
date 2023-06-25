@@ -20,7 +20,7 @@ return (
 		<Row>
 		<Column>
 			<Heading>Info</Heading>
-			<FooterLink href="/">Home</FooterLink>
+			<FooterLink href="/">Umrah</FooterLink>
 			<FooterLink href="/support">Support Us</FooterLink>
 			<FooterLink href="/register">Register</FooterLink>
 		</Column>

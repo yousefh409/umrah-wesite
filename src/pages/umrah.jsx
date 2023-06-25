@@ -6,7 +6,7 @@ import darElSalam from '../images/dar-el-salam.jpg';
 import kaabah from '../images/kaabah.webp';
 import masjidElNabawy from '../images/masjidAlNabawi.jpg';
 
-export const Home = () => {
+export const Umrah = () => {
     
     return (
         <div className="umrahWrapper">
