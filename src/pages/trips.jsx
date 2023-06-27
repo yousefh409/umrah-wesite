@@ -6,7 +6,7 @@ export const Trips = () => {
 
     return (
         <div className="tripsWrapper">
-            <h1>Calednar</h1>
+            <h1>Calendar</h1>
             <div className="tripContentWrapper">
                <p>Coming soon!</p>
             </div>
