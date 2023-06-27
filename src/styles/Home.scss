@@ -1,39 +1,39 @@
-.umrahWrapper {
+.homeWrapper {
     padding: 50px;
 }
 
-.aboutWrapper {
-    width: 1500px;
-    max-width: 80vw;
-    font-size: x-large;
-    color: aqua;
-    margin: 0 auto;
+.homeBanner {
+    width: calc(100vw - 100px);
+    display: grid;
 }
 
-.break {
-    height: 40px;
+.homeBannerImg {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
 }
 
-.breakSmall {
-    height: 20px;
+.homeBannerText { 
+    padding: 5px;
+    width: 40%;
+    background-color: rgb(250, 240, 218);
+    font-size: 2.5vw;
+    text-align: center;
+    padding-top: 10%;
+    height: 100%;                                                  
+    z-index: 10;
+    grid-column: 1;
+    grid-row: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
 }
 
-.hostsWrapper {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.homeBannerText > * 
+{
+  max-width: 90%;
 }
 
-
-.umrahImage {
-    width: 30vw;
-    margin: 30px;
-    border-radius: 15px;
-    /* border: solid 4px rgb(250, 240, 218); */
+.homeWrapperContent {
+    font-size: x-large;   
 }
-
-.umrahImageWrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+// .home
