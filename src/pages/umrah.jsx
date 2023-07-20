@@ -22,7 +22,7 @@ export const Umrah = () => {
                             There, we will not only complete the holy rites of Umrah, but also visit and learn about many of the historic sites that we read about in our Islamic books.
                             We hope to be able to raise funds to make this trip as affordable as possible, so please consider <a href="/support">donating today</a> and spreading the word!
                         </div>
-                        <a style={{margin: "10px"}} href='/register' className='btn btn-primary'>
+                        <a style={{margin: "10px"}} href='/register' className='btn btn-primary contentButton'>
                             Register Today
                         </a>
                     </div>
@@ -43,7 +43,7 @@ export const Umrah = () => {
                             To do this, we need your help (and wallet). Your donations will go to taking students on an amazing trip to visit some of Islams most famous sites, inspiring them for the rest of their lives!
                             Any amount is appreciated, and even just sharing this with your network would bring us closer to our goals.
                         </div>
-                        <a style={{margin: "10px"}} href='/support' className='btn btn-primary'>
+                        <a style={{margin: "10px"}} href='/support' className='btn btn-primary contentButton'>
                             Donate Today
                         </a>
                     </div>
@@ -53,14 +53,14 @@ export const Umrah = () => {
             <div>
                 <h1>The Hosts</h1>
                 <div className="hostsWrapper">
-                    <div className="card" style={{width: "23rem", margin: "7px"}}>
+                    <div className="card hostCard" style={{width: "23rem", margin: "7px"}}>
                         <img className="card-img-top" src={elbakri} alt="Card image cap" />
                         <div className="card-body">
                             <h5 className="card-title">Shaykh Alauddin El-Bakri</h5>
                             <p className="card-text">Shaykh Alauddin El-Bakri is a founding member of several non-profit organizations that serve the Muslim community such as (IMAN) Inner-City Muslim Action Network, My Dean, Support Life Foundation and Tawasaw.org. Shaykh El-Bakri is currently the resident scholar and Khateeb at West Valley Muslim association. Shaykh El-Bakri will be leading and guiding us throughout the trip.</p>
                         </div>
                     </div>
-                    <div className="card" style={{width: "23rem", margin: "7px"}}>
+                    <div className="card hostCard" style={{width: "23rem", margin: "7px"}}>
                         <img className="card-img-top" src={darElSalam} alt="Card image cap" />
                         <div className="card-body">
                             <h5 className="card-title">Dar El Salam</h5>

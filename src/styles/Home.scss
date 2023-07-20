@@ -1,7 +1,43 @@
+//////////////////////////////// Global ////////////////////////////////
 body {
     background-color: rgb(255, 253, 248);
 }
 
+a {
+    color: rgb(196, 178, 141);
+}
+
+.contentButton {
+    width: calc(100% - 20px);
+    font-size: x-large;  
+    background-color: rgb(255, 225, 161);
+    color: black;
+    border: none;
+    font-weight: normal;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.contentButton:hover {
+    background-color: rgb(213, 189, 138);
+}
+
+.contentButton:active {
+    background-color: rgb(196, 174, 126) !important;
+}
+
+.bannerButton {
+    background-color: rgb(255, 225, 161);
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: x-large;
+    width: 150px;
+}
+    
+
+//////////////////////////////// Local ////////////////////////////////
 .homeWrapper {
     padding: 50px;
 }
@@ -70,27 +106,6 @@ body {
 
 }
 
-.homeContentButton {
-    width: 100%;
-    font-size: x-large;  
-    background-color: rgb(255, 225, 161);
-    color: black;
-    border: none;
-    font-weight: normal;
-    padding: 10px;
-    border-radius: 30px;
-    margin-top: 30px;
-}
-
-.umrahButton {
-    background-color: rgb(255, 225, 161);
-    color: black;
-    border: none;
-    border-radius: 15px;
-    font-size: x-large;
-    width: 150px;
-}
-
 .homeCards {
     display: flex;
     justify-content: space-evenly;
@@ -99,10 +114,10 @@ body {
 }
 
 .homeCard {
-    border: solid rgb(210, 210, 210) 2px;
+    // border: solid rgb(160, 138, 91) 2px;
     border-radius: 175px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23);
+    box-shadow: 0 2px 5px rgb(160, 138, 91), 0 2px 10px rgb(160, 138, 91);
     text-align: center;
     width: 350px;
     height: 350px;
@@ -119,16 +134,11 @@ body {
     color: rgb(196, 178, 141);
 }
 
-a {
-    color: rgb(196, 178, 141);
-}
-
 .homeCardButton {
     font-size: large;  
     background-color: rgb(255, 225, 161);
     color: black;
     border: none;
-    font-weight: normal;
     padding: 10px;
     border-radius: 30px;
     margin-top: 30px;

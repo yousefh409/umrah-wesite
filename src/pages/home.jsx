@@ -15,7 +15,7 @@ export const Home = () => (
         <div>
             <div className="homeBannerImg">
                 <h1>Bringing together the Bay Area Muslim student communities together.</h1>
-                <a href='/umrah' className='btn btn-primary umrahButton'>
+                <a href='/umrah' className='btn btn-primary bannerButton'>
                     Umrah
                 </a>
             </div>
@@ -28,7 +28,7 @@ export const Home = () => (
                     <img className="homeContentImage" src={groupPicture2} alt="Stanford & Berkeley Group Picture" />
                     <div className="homeContentText">
                         Welcome to [Organization Name], a dynamic and inclusive community that aims to foster connections and collaboration between Muslim students at UC Berkeley and Stanford University. Our organization serves as a platform for building lifelong friendships, exploring shared interests, and nurturing a vibrant network of talented individuals.
-                        <a href='/donate' className='btn btn-primary homeContentButton'>
+                        <a href='/donate' className='btn btn-primary contentButton'>
                             Donate Today
                         </a>
                     </div>
@@ -42,7 +42,7 @@ export const Home = () => (
                     {window.innerWidth <= 768? <img className="homeContentImage" src={kaabah} alt="Picture of Kaabah" />: <div />}
                     <div className="homeContentText">
                        Each year, we host a joint Umrah Trip for UC Berkeley and Stanford students. This year, the trip will take place from December 25 to January 6, and will be led by Shaykh Alauddin El-Bakri. This trip is organized in collaboration with Tawasaw and Dar El Salam. We will also be fundrasaising money to make the trip as affordable as possible!
-                        <a href='/umrah' className='btn btn-primary homeContentButton'>
+                        <a href='/umrah' className='btn btn-primary contentButton'>
                             Learn More
                         </a>
                     </div>

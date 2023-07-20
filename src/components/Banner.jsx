@@ -23,7 +23,7 @@ function Banner() {
                 A first of its kind Umrah trip bringing together the Berkeley and Stanford muslim communities.
             </h2>
             <a
-                className='btn btn-primary'
+                className='btn btn-primary bannerButton'
                 data-fancybox
                 href='/register'
             >
@@ -42,7 +42,7 @@ function Banner() {
             <h2 className='section-title large'>
                 Sponsored and supported by you!
             </h2>
-            <a href='/support' className='btn btn-primary'>
+            <a href='/support' className='btn btn-primary bannerButton'>
                 Donate Today
             </a>
             </div>
@@ -56,7 +56,7 @@ function Banner() {
             <h2 className='section-title large'>
             Taking students on a once-in-a-lifetime trip
             </h2>
-            <a href='/support' className='btn btn-primary'>
+            <a href='/support' className='btn btn-primary bannerButton'>
                 Support Today
             </a>
             </div>
