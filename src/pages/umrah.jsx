@@ -21,9 +21,10 @@ export const Umrah = () => {
                             This is a once in a lifetime trip, that will bring together the Berkeley and Stanford muslim student populations. Together, we will embark on an 11-night trip to the blessed cities of Mecca and Madinah. 
                             There, we will not only complete the holy rites of Umrah, but also visit and learn about many of the historic sites that we read about in our Islamic books.
                             We hope to be able to raise funds to make this trip as affordable as possible, so please consider <a href="/support">donating today</a> and spreading the word!
+                            If you would like to join on this amazing trip, please <a href="/register">register today</a>.
                         </div>
-                        <a style={{margin: "10px"}} href='/register' className='btn btn-primary contentButton'>
-                            Register Today
+                        <a style={{margin: "10px"}} href='/trips' className='btn btn-primary contentButton'>
+                            Learn More
                         </a>
                     </div>
                 </div>

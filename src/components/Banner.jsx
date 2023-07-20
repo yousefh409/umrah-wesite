@@ -39,8 +39,8 @@ function Banner() {
         </div>
         <div className='item'>
             <div className='col left'>
-            <h2 className='section-title large'>
-                Sponsored and supported by you!
+            <h2 style={{padding: "10px"}} className='section-title large'>
+                Sponsored and supported by you, making the dream umrah possible for our students!
             </h2>
             <a href='/support' className='btn btn-primary bannerButton'>
                 Donate Today
@@ -54,10 +54,10 @@ function Banner() {
         <div className='item'>
             <div className='col left'>
             <h2 className='section-title large'>
-            Taking students on a once-in-a-lifetime trip
+            Taking students on a once-in-a-lifetime trip to the most important cities in Islam.
             </h2>
-            <a href='/support' className='btn btn-primary bannerButton'>
-                Support Today
+            <a href='/trips' className='btn btn-primary bannerButton'>
+                Learn Today
             </a>
             </div>
             <div
