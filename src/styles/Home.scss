@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(255, 253, 248);
+}
+
 .homeWrapper {
     padding: 50px;
 }
@@ -8,9 +12,20 @@
 }
 
 .homeBannerImg {
-    width: 100%;
-    grid-column: 1;
-    grid-row: 1;
+    // width: 100vw;
+    height: calc(100vh - 100px);
+    // -webkit-mask-image: linear-gradient(to top, rgb(192, 131, 1) 50%, transparent 95%);
+    // background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(192, 131, 1));
+    // opacity: 1;
+    // background: linear-gradient(180deg,#283680 9%,rgba(40,54,128,.64) 89%);
+    // background-image: url("../images/homeBanner.jpg");
+    // mix-blend-mode: normal;
+    background: linear-gradient(to top, transparent, rgb(250, 240, 218)),
+    url("../images/cal-stanford-group-picture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    padding-top: 150px;
 }
 
 .homeBannerText { 
@@ -34,6 +49,94 @@
 }
 
 .homeWrapperContent {
-    font-size: x-large;   
+    display: flex;
+    flex-wrap: wrap; 
 }
-// .home
+
+.homeContentImage {
+    width: 50%;
+    border-radius: 50px;
+    padding: 40px;
+    padding-top: 5px;
+    min-width: 400px;
+}
+
+.homeContentText {
+    width: 50%;
+    font-size: x-large;  
+    padding: 40px;
+    padding-top: 0;
+    min-width: 400px;
+
+}
+
+.homeContentButton {
+    width: 100%;
+    font-size: x-large;  
+    background-color: rgb(255, 225, 161);
+    color: black;
+    border: none;
+    font-weight: normal;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.umrahButton {
+    background-color: rgb(255, 225, 161);
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: x-large;
+    width: 150px;
+}
+
+.homeCards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.homeCard {
+    border: solid rgb(210, 210, 210) 2px;
+    border-radius: 175px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23);
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    padding-top: 75px;
+}
+
+.socialMediaRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 50px;
+    padding: 15px; 
+    text-decoration: none;
+    color: rgb(196, 178, 141);
+}
+
+a {
+    color: rgb(196, 178, 141);
+}
+
+.homeCardButton {
+    font-size: large;  
+    background-color: rgb(255, 225, 161);
+    color: black;
+    border: none;
+    font-weight: normal;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.decorationDot {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(255, 225, 161);
+}

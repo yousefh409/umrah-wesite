@@ -5,41 +5,74 @@ import elbakri from '../images/shaykh-el-bakri.png';
 import darElSalam from '../images/dar-el-salam.jpg';
 import kaabah from '../images/kaabah.webp';
 import masjidElNabawy from '../images/masjidAlNabawi.jpg';
-import homeBannerImg from '../images/homeBanner.jpg'
+import homeBannerImg from '../images/cal-stanford-group-picture.jpg'
+import groupPicture2 from '../images/cal-stanford-group-picture-2.jpg'
+import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const Home = () => {
-    
-    return (
-        <div className="homeWrapper">
-            <div className="homeBanner">
-                <div className="homeBannerText">
-                    <p>Bringing together the Bay Area Muslim student communities together</p>
-                </div>
-                <img className="homeBannerImg" src={homeBannerImg} alt="Home Banner Image" />
+export const Home = () => (
+    <div>
+        <div>
+            <div className="homeBannerImg">
+                <h1>Bringing together the Bay Area Muslim student communities together.</h1>
+                <a href='/umrah' className='btn btn-primary umrahButton'>
+                    Umrah
+                </a>
             </div>
-            <div className="break" />
-           <div>
+        </div>
+        <div className="break" />
+        <div className="homeWrapper">
+            <div>
                 <h1>About</h1>
                 <div className="homeWrapperContent">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum ut diam imperdiet sollicitudin. Praesent pellentesque justo odio, vitae accumsan purus auctor non. Etiam eu metus vel nibh venenatis blandit vitae quis orci. Vivamus lacinia iaculis quam in imperdiet. Nam eu consectetur nisl. Nunc sit amet efficitur enim, eget tincidunt diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum ut diam imperdiet sollicitudin. Praesent pellentesque justo odio, vitae accumsan purus auctor non. Etiam eu metus vel nibh venenatis blandit vitae quis orci. Vivamus lacinia iaculis quam in imperdiet. Nam eu consectetur nisl. Nunc sit amet efficitur enim, eget tincidunt diam.
+                    <img className="homeContentImage" src={groupPicture2} alt="Stanford & Berkeley Group Picture" />
+                    <div className="homeContentText">
+                        Welcome to [Organization Name], a dynamic and inclusive community that aims to foster connections and collaboration between Muslim students at UC Berkeley and Stanford University. Our organization serves as a platform for building lifelong friendships, exploring shared interests, and nurturing a vibrant network of talented individuals.
+                        <a href='/donate' className='btn btn-primary homeContentButton'>
+                            Donate Today
+                        </a>
+                    </div>
                 </div>
-           </div>
-           <div className="breakSmall" />
-           <a style={{width: "100%"}} href='/support' className='btn btn-primary'>
-                Donate Today
-            </a>
-          
-           <div className="break" />
-           <div>
+            </div>
+            
+            <div className="break" />
+            <div>
                 <h1>Umrah</h1>
                 <div className="homeWrapperContent">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum ut diam imperdiet sollicitudin. Praesent pellentesque justo odio, vitae accumsan purus auctor non. Etiam eu metus vel nibh venenatis blandit vitae quis orci. Vivamus lacinia iaculis quam in imperdiet. Nam eu consectetur nisl. Nunc sit amet efficitur enim, eget tincidunt diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum ut diam imperdiet sollicitudin. Praesent pellentesque justo odio, vitae accumsan purus auctor non. Etiam eu metus vel nibh venenatis blandit vitae quis orci. Vivamus lacinia iaculis quam in imperdiet. Nam eu consectetur nisl. Nunc sit amet efficitur enim, eget tincidunt diam.
+                    {window.innerWidth <= 768? <img className="homeContentImage" src={kaabah} alt="Picture of Kaabah" />: <div />}
+                    <div className="homeContentText">
+                       Each year, we host a joint Umrah Trip for UC Berkeley and Stanford students. This year, the trip will take place from December 25 to January 6, and will be led by Shaykh Alauddin El-Bakri. This trip is organized in collaboration with Tawasaw and Dar El Salam. We will also be fundrasaising money to make the trip as affordable as possible!
+                        <a href='/umrah' className='btn btn-primary homeContentButton'>
+                            Learn More
+                        </a>
+                    </div>
+                    {window.innerWidth > 768? <img className="homeContentImage" src={kaabah} alt="Picture of Kaabah" />: <div />}
                 </div>
-           </div>
-           <div className="breakSmall" />
-           <a style={{width: "100%"}} href='/umrah' className='btn btn-primary'>
-                Learn More
-            </a>
+            </div>
+            
+            <div className="break" />
+            <div className="homeCards">
+                {window.innerWidth > 768? <div className="decorationDot" />: <div />}
+                {window.innerWidth > 768? <div className="decorationDot" />: <div />}
+                <div className="homeCard">
+                    <h3>Social Media</h3>
+                    <div>Follow us on social media to stay up-to-date with the latest [Organization Name] updates!</div>
+                    <div className="socialMediaRow">
+                        <a href='/umrah'>
+                            <FontAwesomeIcon icon={faInstagram} title="Instagram" />		
+                        </a>
+                        <a href='/umrah'>
+                            <FontAwesomeIcon icon={faFacebook} title="Facebook" />		
+                        </a>
+                        <a href='/umrah'>
+                            <FontAwesomeIcon icon={faYoutube} title="Youtube" />		
+                        </a>
+                    </div>
+                </div>
+                {window.innerWidth > 768? <div className="decorationDot" />: <div />}
+                {window.innerWidth > 768? <div className="decorationDot" />: <div />}
+
+            </div>
         </div>
-    );
-};                     
+    </div>
+);                     
