@@ -17,8 +17,11 @@ table {
   border-radius: 1em;
   overflow: hidden;
   background-color: rgb(230, 230, 230);
-  margin: 30px;
+//   margin: 30px;
+margin-bottom: 30px;
   font-size: large;
+      width: 100%;
+
 }
 
 th, td {
@@ -52,6 +55,13 @@ th, td {
     width: 150px;
 }
     
+.bannerButton:hover {
+    background-color: rgb(213, 189, 138);
+}
+
+.bannerButton:active {
+    background-color: rgb(196, 174, 126) !important;
+}
 
 //////////////////////////////// Local ////////////////////////////////
 .homeWrapper {

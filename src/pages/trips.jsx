@@ -5,6 +5,7 @@ import hotel from "../images/hotel.jpg"
 import kaabah from '../images/kaabah.webp';
 import masjidElNabawy from '../images/masjidAlNabawi.jpg';
 import clockTower from '../images/clock-tower.jpg';
+import taif from '../images/taif.jpg'
 
 export const Trips = () => {
 
@@ -34,6 +35,7 @@ export const Trips = () => {
                     <h4>Madinah</h4>
                     <p>Madinah is known and loved for the tranquility that it brings to our hearts – that feeling that we have finally made it back home – home is definitely where the heart is and our hearts are profoundly connected with a deep love of the Prophet Muhammad (ﷺ) and his beautiful city. It is a city that is filled with stories of love and sacrifice, of prophetic wisdom and illustrious companionship. Madinah is a city that keeps on giving – rich in history and lessons that build our faith and traditions and inspire us to become the best versions of ourselves. Welcome home, welcome to Madinah.</p>
                     <div className="bulletRow">
+                        {window.innerWidth <= 768? <img className="tripsImage" src={masjidElNabawy} alt="Picture of masjid el nabawy" />: <></>}
                         <ul className="tripsList">
                             <li className="scheduleListItem">Extensive Haram tour</li>
                             <li className="scheduleListItem">Medina Museum bus trip</li>
@@ -42,7 +44,7 @@ export const Trips = () => {
                             <li className="scheduleListItem">How to perform Umrah training session</li>
                             <li className="scheduleListItem">One-on-one personal sessions with Shaykh Alauddin Elbakri</li>
                         </ul>
-                        {window.innerWidth > 768? <img className="tripsImage" src={masjidElNabawy} alt="Picture of masjid el nabawy" />: <div />}
+                        {window.innerWidth > 768? <img className="tripsImage" src={masjidElNabawy} alt="Picture of masjid el nabawy" />: <></>}
                     </div>
                     Mazarat:
                     <ul>
@@ -58,6 +60,7 @@ export const Trips = () => {
                     <h4>Makkah</h4>
                     <p>After years of facing towards this great city in each and every prayer and learning about the magnificent history of this most blessed place on Earth, you can now finally pray in front of the first house built and dedicated for the worship of Allah – the Ka’bah. You’ll hear, live, the glorious call to prayer from the famous muadhins, calling ‘Allahu Akbar, Allaaaahu Akbar’ as the sound of the adhaan echoes from the speakers and moves your soul and elevates your imaan. As you join the rows, lines straight and hearts upright, seeking to draw closer to Allah, standing before Him in humility and prayer, you realize, Allah has chosen you to be His Guest in this great journey of faith.</p>
                     <div className="bulletRow">
+                        {window.innerWidth <= 768? <img className="tripsImage" src={kaabah} alt="Picture of the kaabah" />: <></>}
                         <ul className="tripsList">
                             <li className="scheduleListItem">Guided Umrah with Shaykh Alauddin Elbakri</li>
                             <li className="scheduleListItem">Extensive Haram tour</li>
@@ -67,7 +70,7 @@ export const Trips = () => {
                             <li className="scheduleListItem">Jabal al Noor visit at Ghar Hira</li>
                             <li className="scheduleListItem">One-on-one personal sessions with Shaykh Alauddin Elbakri</li>
                         </ul>
-                        {window.innerWidth > 768? <img className="tripsImage" src={kaabah} alt="Picture of the kaabah" />: <div />}
+                        {window.innerWidth > 768? <img className="tripsImage" src={kaabah} alt="Picture of the kaabah" />: <></>}
                     </div>
                     Mazarat:
                     <ul>
@@ -138,32 +141,37 @@ export const Trips = () => {
                             </tr>
                         </table>
                     </div>
-                    {window.innerWidth > 768? <img className="tripsImage" src={clockTower} alt="Picture of the kaabah" />: <div />}
+                    <img className="tripsImage" src={clockTower} alt="Picture of the kaabah" />
                 </div>
 
                 <h3>Inclusions & Exclusions</h3>
                 <h6>Inclusions</h6>
-                <ul className="tripsList">
-                    <li className="scheduleListItem">Roundtrip international airfare (if selected ground and air package)</li>
-                    <li className="scheduleListItem">Accommodations in Madinah and Makkah</li>
-                    <li className="scheduleListItem">Daily open buffet breakfast at hotels</li>
-                    <li className="scheduleListItem">Ground transport to hotels and airports</li>
-                    <li className="scheduleListItem">Haramain train/bus transfer from Madinah to Makkah</li>
-                    <li className="scheduleListItem">Guided tours of Madinah and Makkah Mazarat</li>
-                    <li className="scheduleListItem">Badr and Taif tour</li>
-                    <li className="scheduleListItem">Virtual information session prior to departure</li>
-                    <li className="scheduleListItem">Umrah lecture and Khatirahs on-site</li>
-                    <li className="scheduleListItem">Visa processing and visa fees, Saudi health insurance</li>
-                </ul>
+                <div className="bulletRow">
+                    <div>
+                        <ul className="tripsList">
+                            <li className="scheduleListItem">Roundtrip international airfare (if selected ground and air package)</li>
+                            <li className="scheduleListItem">Accommodations in Madinah and Makkah</li>
+                            <li className="scheduleListItem">Daily open buffet breakfast at hotels</li>
+                            <li className="scheduleListItem">Ground transport to hotels and airports</li>
+                            <li className="scheduleListItem">Haramain train/bus transfer from Madinah to Makkah</li>
+                            <li className="scheduleListItem">Guided tours of Madinah and Makkah Mazarat</li>
+                            <li className="scheduleListItem">Badr and Taif tour</li>
+                            <li className="scheduleListItem">Virtual information session prior to departure</li>
+                            <li className="scheduleListItem">Umrah lecture and Khatirahs on-site</li>
+                            <li className="scheduleListItem">Visa processing and visa fees, Saudi health insurance</li>
+                        </ul>
 
-                <h6>Exclusions</h6>
-                <ul className="tripsList">
-                    <li className="scheduleListItem">Lunches and dinners</li>
-                    <li className="scheduleListItem">Cost of PCR test on return</li>
-                    <li className="scheduleListItem">Cost of Saudi SIM card (if applicable)</li>
-                    <li className="scheduleListItem">Optional tours</li>
-                    <li className="scheduleListItem">*In case of any quarantine due to COVID, all expenses are not included for any days</li>
-                </ul>
+                        <h6>Exclusions</h6>
+                        <ul className="tripsList">
+                            <li className="scheduleListItem">Lunches and dinners</li>
+                            <li className="scheduleListItem">Cost of PCR test on return</li>
+                            <li className="scheduleListItem">Cost of Saudi SIM card (if applicable)</li>
+                            <li className="scheduleListItem">Optional tours</li>
+                            <li className="scheduleListItem">*In case of any quarantine due to COVID, all expenses are not included for any days</li>
+                        </ul>
+                    </div>
+                    <img className="tripsImage" src={taif} alt="Picture of taif" />
+                </div>
 
                 <h6>Note</h6>
                 <ul className="tripsList">

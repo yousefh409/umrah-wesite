@@ -36,6 +36,10 @@ function Navbar() {
     setMenuOpen((p) => !p);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  }
+
   return (
     <header className="header">
       <div className="header__content">
@@ -48,22 +52,22 @@ function Navbar() {
           }`}
         >
           <ul>
-            <li>
+            <li onClick={closeMenu}>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li onClick={closeMenu}>
               <Link to="/umrah">Umrah</Link>
             </li>
-            <li>
+            <li onClick={closeMenu}>
               <Link className="importantNavButton" to="/support">Support</Link>
             </li>
-            <li>
+            <li onClick={closeMenu}>
               <Link className="importantNavButton" to="/register">Register</Link>
             </li>
-            <li>
+            <li onClick={closeMenu}>
               <Link to="/trips">Trips</Link>
             </li>
-            <li >
+            <li onClick={closeMenu}>
               <Link to="/sponsors">Sponsors</Link>
             </li>
             {/* <li>
