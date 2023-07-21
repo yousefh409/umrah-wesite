@@ -15,6 +15,7 @@ export const Support = () => {
     return (
         <div className="supportWrapper">
             <div>
+                {/* <p>Sponsor a Student: Berkeley vs. Stanford Umrah!</p> */}
                 <h1>Current Progress</h1>
                 <h6>Here is how close we are to meeting our goals:</h6>
                 <div className="progressWrapper">

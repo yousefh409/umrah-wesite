@@ -55,7 +55,7 @@ export const Home = () => (
                 {window.innerWidth > 768? <div className="decorationDot" />: <div />}
                 {window.innerWidth > 768? <div className="decorationDot" />: <div />}
                 <div className="homeCard">
-                    <h3>Social Media</h3>
+                    <h3 style={{color: "rgb(196, 174, 126)"}}>Social Media</h3>
                     <div>Follow us on social media to stay up-to-date with the latest [Organization Name] updates!</div>
                     <div className="socialMediaRow">
                         <a href='/umrah'>
