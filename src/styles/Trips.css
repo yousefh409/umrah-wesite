@@ -3,7 +3,6 @@
 }
 
 .scheduleListItem {
-    font-size: x-large;
     margin-top: 10px;
 }
 
@@ -13,9 +12,18 @@
     align-items: center;
 }
 
+.bulletRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tripsList {
+    max-width: 768px;
+}
 .tripsImage {
     max-width: 30vw;
-    margin: 30px;
+    /* margin: 30px; */
+    margin-right: 100px;
     border-radius: 15px;
 }
 

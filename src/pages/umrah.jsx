@@ -32,8 +32,8 @@ export const Umrah = () => {
             {/* <div className="break" /> */}
             
             {window.innerWidth > 768? <div className="umrahImageWrapper">
-                <img className="umrahImage islamicBorder" src={kaabah} alt="Picture of hotel room" />
-                <img className="umrahImage islamicBorder" src={masjidElNabawy} alt="Picture of hotel room" />
+                <img className="umrahImage islamicBorder" src={kaabah} alt="Picture of the kaabah" />
+                <img className="umrahImage islamicBorder" src={masjidElNabawy} alt="Picture of masjid el nabawy" />
             </div>: <div />}
             <div>
                 <h1>Donations</h1>

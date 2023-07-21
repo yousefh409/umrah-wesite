@@ -7,13 +7,29 @@ a {
     color: rgb(196, 178, 141);
 }
 
+table, th, td {
+    // border:1px solid black;
+    padding: 15px;
+}
+
+table {
+    border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  background-color: rgb(230, 230, 230);
+  margin: 30px;
+  font-size: large;
+}
+
+th, td {
+    border-bottom: 2px solid white; 
+}
 .contentButton {
     width: calc(100% - 20px);
     font-size: x-large;  
     background-color: rgb(255, 225, 161);
     color: black;
     border: none;
-    font-weight: normal;
     padding: 10px;
     border-radius: 30px;
     margin-top: 30px;
@@ -132,6 +148,16 @@ a {
     padding: 15px; 
     text-decoration: none;
     color: rgb(196, 178, 141);
+}
+
+
+.socialMediaIcon:hover {
+    margin-bottom: 5px;
+    color: rgb(213, 189, 138);
+}
+
+.socialMediaIcon:active {
+    color: rgb(196, 174, 126);
 }
 
 .homeCardButton {

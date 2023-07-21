@@ -59,13 +59,13 @@ export const Home = () => (
                     <div>Follow us on social media to stay up-to-date with the latest [Organization Name] updates!</div>
                     <div className="socialMediaRow">
                         <a href='/umrah'>
-                            <FontAwesomeIcon icon={faInstagram} title="Instagram" />		
+                            <FontAwesomeIcon className="socialMediaIcon" icon={faInstagram} title="Instagram" />		
                         </a>
                         <a href='/umrah'>
-                            <FontAwesomeIcon icon={faFacebook} title="Facebook" />		
+                            <FontAwesomeIcon className="socialMediaIcon" icon={faFacebook} title="Facebook" />		
                         </a>
                         <a href='/umrah'>
-                            <FontAwesomeIcon icon={faYoutube} title="Youtube" />		
+                            <FontAwesomeIcon className="socialMediaIcon" icon={faYoutube} title="Youtube" />		
                         </a>
                     </div>
                 </div>
