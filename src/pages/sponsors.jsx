@@ -17,7 +17,7 @@ export const Sponsors = () => {
                             <img className="sponsorLogoImage" src={tawasaw} alt="Tawasaw Logo" />
                         </Link>
                     </div>
-                    <h3 style={{textAlign:"center"}}>Tawasaw</h3>
+                    <h3 style={{textAlign:"center", marginBottom:"30px"}}>Tawasaw</h3>
                 </div>
                 <div>
                     <div className="sponsorLogo">
@@ -25,7 +25,7 @@ export const Sponsors = () => {
                             <img className="sponsorLogoImage" src={calMSA} alt="Tawasaw Logo" />
                         </Link>
                     </div>
-                    <h3 style={{textAlign:"center"}}>UC Berkeley MSA</h3>
+                    <h3 style={{textAlign:"center", marginBottom:"30px"}}>UC Berkeley MSA</h3>
                 </div>
                 <div>
                     <div className="sponsorLogo">
@@ -33,7 +33,7 @@ export const Sponsors = () => {
                             <img className="sponsorLogoImage" src={stanfordMSU} alt="Tawasaw Logo" />
                         </Link>
                     </div>
-                    <h3 style={{textAlign:"center"}}>Stanford MSU</h3>
+                    <h3 style={{textAlign:"center", marginBottom:"30px"}}>Stanford MSU</h3>
                 </div>
             </div>
         </div>

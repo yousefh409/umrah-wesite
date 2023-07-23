@@ -50,7 +50,7 @@ export const Umrah = () => {
                     </div>
                 </div>
             </div>
-            <div className="break" />
+            <div className="breakSmall" />
             <div>
                 <h1>The Hosts</h1>
                 <div className="hostsWrapper">
@@ -61,7 +61,7 @@ export const Umrah = () => {
                             <p className="card-text">Shaykh Alauddin El-Bakri is a founding member of several non-profit organizations that serve the Muslim community such as (IMAN) Inner-City Muslim Action Network, My Dean, Support Life Foundation and Tawasaw.org. Shaykh El-Bakri is currently the resident scholar and Khateeb at West Valley Muslim association. Shaykh Alauddin Elbakri's profound knowledge and experience make him the perfect guide for our Umrah journey.</p>
                         </div>
                     </div>
-                    <div className="card hostCard" style={{width: "23rem", margin: "7px"}}>
+                    <div className="card hostCard" style={{width: "23rem"}}>
                         <img className="card-img-top" src={darElSalam} alt="Card image cap" />
                         <div className="card-body">
                             <h5 className="card-title">Dar El Salam</h5>

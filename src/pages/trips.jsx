@@ -32,7 +32,7 @@ export const Trips = () => {
                 <div className="breakSmall" />
                 <h3>Itinerary</h3>
                 <div>
-                    <h4>Madinah</h4>
+                    <h5>Madinah</h5>
                     <p>Madinah is known and loved for the tranquility that it brings to our hearts – that feeling that we have finally made it back home – home is definitely where the heart is and our hearts are profoundly connected with a deep love of the Prophet Muhammad (ﷺ) and his beautiful city. It is a city that is filled with stories of love and sacrifice, of prophetic wisdom and illustrious companionship. Madinah is a city that keeps on giving – rich in history and lessons that build our faith and traditions and inspire us to become the best versions of ourselves. Welcome home, welcome to Madinah.</p>
                     <div className="bulletRow">
                         {window.innerWidth <= 768? <img className="tripsImage" src={masjidElNabawy} alt="Picture of masjid el nabawy" />: <></>}
@@ -57,7 +57,7 @@ export const Trips = () => {
                     </ul>
                 </div>
                 <div>
-                    <h4>Makkah</h4>
+                    <h5>Makkah</h5>
                     <p>After years of facing towards this great city in each and every prayer and learning about the magnificent history of this most blessed place on Earth, you can now finally pray in front of the first house built and dedicated for the worship of Allah – the Ka’bah. You’ll hear, live, the glorious call to prayer from the famous muadhins, calling ‘Allahu Akbar, Allaaaahu Akbar’ as the sound of the adhaan echoes from the speakers and moves your soul and elevates your imaan. As you join the rows, lines straight and hearts upright, seeking to draw closer to Allah, standing before Him in humility and prayer, you realize, Allah has chosen you to be His Guest in this great journey of faith.</p>
                     <div className="bulletRow">
                         {window.innerWidth <= 768? <img className="tripsImage" src={kaabah} alt="Picture of the kaabah" />: <></>}
