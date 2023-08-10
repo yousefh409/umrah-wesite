@@ -14,7 +14,7 @@ export const Home = () => (
     <div>
         <div>
             <div className="homeBannerImg">
-                <h1>Bringing together the Berkeley and Stanford muslim student communities.</h1>
+                <h1>Bringing the Berkeley and Stanford muslim student communities together.</h1>
                 <a href='/umrah' className='btn btn-primary bannerButton'>
                     Umrah
                 </a>
